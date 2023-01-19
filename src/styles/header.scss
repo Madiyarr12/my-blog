@@ -1,0 +1,50 @@
+header {
+  
+  nav {
+    @apply text-white flex items-center justify-between py-[40px];
+    .logo {
+      background: linear-gradient(270deg, #22d3ee 50%, #0ea5e9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    ul {
+      @apply flex space-x-[50px] text-[20px];
+      li {
+        @apply hover:cursor-pointer hover:text-[#22D3EE] active:scale-95 duration-200;
+      }
+    }
+  }
+  .desktopHeader{
+    display: block;
+  }
+  .mobileHeader {
+    display: none;
+  }
+}
+// ===========================  Responsive =======================================
+@media (max-width: 575.98px) {
+  .desktopHeader{
+    display: none;
+  }
+  .mobileHeader {
+    display: block;
+    nav {
+      @apply text-white flex items-center justify-between py-[25px];
+      .logo {
+        background: linear-gradient(270deg, #22d3ee 50%, #0ea5e9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+    ul {
+      @apply text-white space-y-5 text-center duration-200 text-[20px] mt-4;
+      li {
+        @apply hover:cursor-pointer hover:text-[#22D3EE] active:scale-95 duration-200;
+      }
+    }
+  }
+}

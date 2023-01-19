@@ -1,0 +1,20 @@
+footer {
+  .container {
+    @apply flex justify-between items-center ;
+    width: 80%;
+    margin: 0 auto;
+  }
+  @media (max-width: 575.98px) {
+    .container {
+      @apply flex flex-col space-y-3 items-center;
+      width: 90%;
+      margin: 0 auto;
+      p{
+        font-size: 16px;
+      }
+      a *{
+        @apply w-8 h-8;
+      }
+    }
+  }
+}
