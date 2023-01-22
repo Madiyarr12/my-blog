@@ -1,32 +1,41 @@
-.aboutMe{
-    @apply flex items-center justify-between space-x-10 text-white mt-[85px] mb-[80px];
-    .aboutMe-left{
-        @apply w-4/5;
-        h1{
-           @apply text-[48px] font-[700];
-        }
-        p{
-            @apply text-[22px] my-[48px];
-        }
+.aboutMe {
+  margin-top: 85px;
+  margin-bottom: 80px;
+
+  @apply flex items-center justify-between space-x-10 text-white; // mt-[85px] mb-[80px]
+  .aboutMe-left {
+    @apply w-4/5;
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      //    @apply text-[48px] font-[700];
     }
-    .aboutMe-right{
-        @apply w-2/5;
+    p {
+      font-size: 22px;
+      margin: 48px 0;
+      // @apply text-[22px] my-[48px];
     }
+  }
+  .aboutMe-right {
+    @apply w-2/5;
+  }
 }
 @media (max-width: 575.98px) {
-    .aboutMe{
-        @apply flex flex-col-reverse items-center justify-between text-white mt-[50px] mb-[100px];
-        .aboutMe-left{
-            @apply w-4/5 mx-auto;
-            h1{
-               @apply text-[40px] font-[700];
-            }
-            p{
-                @apply text-[15px] my-[20px];
-            }
-        }
-        .aboutMe-right{
-            @apply w-3/5 mx-auto mb-5;
-        }
-    } 
+  .aboutMe {
+    @apply flex flex-col-reverse items-center justify-between text-white mt-[50px] mb-[100px];
+    .aboutMe-left {
+      @apply w-4/5 mx-auto;
+      h1 {
+        @apply text-[40px] font-[700];
+      }
+      p {
+        font-size: 15px;
+        margin: 20px 0;
+        @apply text-[15px] my-[20px];
+      }
+    }
+    .aboutMe-right {
+      @apply w-3/5 mb-5;
+    }
+  }
 }
