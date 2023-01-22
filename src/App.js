@@ -1,4 +1,5 @@
 import BlogMainPage from "./pages/Landing";
+import 'animate.css';
 import { Routes, Route, BrowserRouter } from "react-router-dom"
 import Blog from "./pages/Blog";
 import Letter from "./pages/Letter";
